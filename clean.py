@@ -37,7 +37,7 @@ for file_path in file_path_list:
 
     with open(file_path, 'r', encoding='utf8',errors='ignore') as src, open(clean_file_path, 'w') as dst:
         while True:
-            chunk = src.read(4096)
+            chunk = src.read(5096)
             if not chunk:
                 break
 
