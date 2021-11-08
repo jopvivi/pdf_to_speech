@@ -17,7 +17,7 @@ for target in file_name_list:
 	        if lineno % lines_per_file == 0:
 	            if smallfile:
 	                smallfile.close()
-	            small_filename = str((lineno + lines_per_file)) + ' ' + target
+	            small_filename = target.replace('.txt',' ') + str((lineno + lines_per_file)) + '.txt'
 	            smallfile = open(small_filename, "w")
 	        smallfile.write(line)
 	    if smallfile:
