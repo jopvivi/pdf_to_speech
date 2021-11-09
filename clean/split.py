@@ -1,10 +1,8 @@
-import os
 import glob
 
 lines_per_file = 8900
 smallfile = None
 
-cwd = os.getcwd()
 file_pattern = '*.txt'
 file_name_list = []
 
