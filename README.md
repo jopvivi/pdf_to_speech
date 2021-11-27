@@ -16,6 +16,6 @@ I used to depend on TTSReader to hear text: https://www.majorgeeks.com/files/det
 
 I wanted to automate what used to be a manual process. With this, you can convert large groups of files into audio files.
 
-To adjust the speech rate, edit line 14 of ``speech.py``
+To adjust the speech rate, edit line 16 of ``speech.py``
 
 SAPI5 voice Microsoft Mary recommended. 😎
