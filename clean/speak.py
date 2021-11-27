@@ -6,6 +6,7 @@ engine = pyttsx3.init()
 
 file_pattern = '*.txt'
 file_name_list = []
+count = 0
 
 if '*' in file_pattern:
     file_name_list.extend(glob.glob(file_pattern))
@@ -31,3 +32,6 @@ for target in file_name_list:
         fullPath = os.path.join(os.getcwd(), wav_filename)
         engine.save_to_file(text_file, fullPath)
         engine.runAndWait()
+        count = count + 1
+        message = "{}".format(count) + " complete."
+        print(message)
