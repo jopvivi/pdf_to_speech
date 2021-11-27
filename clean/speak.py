@@ -12,11 +12,11 @@ if '*' in file_pattern:
     file_name_list.extend(glob.glob(file_pattern))
 
 # speech rate
-engine.setProperty('rate', 600)
 rate = engine.getProperty('rate')
+engine.setProperty('rate', 600)
 # speech volume
 volume = engine.getProperty('volume')
-engine.setProperty('volume',1.0)
+engine.setProperty('volume', 1.0)
 # speech voice
 voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[1].id)
