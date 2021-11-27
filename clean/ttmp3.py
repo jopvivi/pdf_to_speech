@@ -27,7 +27,7 @@ for target in file_name_list:
     with open(target,'r',encoding='utf-8', errors='ignore') as text_file:
         for i in text_file.readlines():
             string_to_parse = string_to_parse + i
-            mp3_filename = target.replace('.txt','.mp3')
-            fullPath = os.path.join(os.getcwd(), mp3_filename)
-            engine.save_to_file(string_to_parse, fullPath)
-            engine.runAndWait()
+        wav_filename = target.replace('.txt','.wav')
+        fullPath = os.path.join(os.getcwd(), wav_filename)
+        engine.save_to_file(string_to_parse, fullPath)
+        engine.runAndWait()
