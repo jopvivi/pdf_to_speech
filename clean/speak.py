@@ -23,11 +23,11 @@ engine.setProperty('voice', voices[1].id)
 engine.runAndWait() # engine start
 
 for target in file_name_list:
-    string_to_parse = ''
-    with open(target,'r',encoding='utf-8', errors='ignore') as text_file:
-        for i in text_file.readlines():
-            string_to_parse = string_to_parse + i
+    text_file = ''
+    with open(target,'r',encoding='utf-8', errors='ignore') as src:
+        for i in src:
+            text_file = text_file + i
         wav_filename = target.replace('.txt','.wav')
         fullPath = os.path.join(os.getcwd(), wav_filename)
-        engine.save_to_file(string_to_parse, fullPath)
+        engine.save_to_file(text_file, fullPath)
         engine.runAndWait()
