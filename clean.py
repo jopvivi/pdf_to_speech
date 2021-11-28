@@ -35,7 +35,7 @@ for file_path in file_path_list:
     if not os.path.isdir(clean_file_dir):
         os.makedirs(clean_file_dir)
 
-    with open(file_path, 'r', encoding='utf8',errors='ignore') as src, open(clean_file_path, 'w') as dst:
+    with open(file_path, 'r', encoding='utf-8',errors='ignore') as src, open(clean_file_path, 'w') as dst:
         while True:
             chunk = src.read(5096)
             if not chunk:
