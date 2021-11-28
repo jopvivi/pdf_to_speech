@@ -6,16 +6,16 @@ A toolkit for converting PDF books into TTS audio books.
 * `pip install --upgrade pip`
 * `pip install pyttsx3`
 
-## Further reading
-
-https://pypi.org/project/pyttsx3/
-
 ## Use
 
-I used to depend on TTSReader to hear text: https://www.majorgeeks.com/files/details/ttsreader.html
+I used to depend on [TTSReader](https://www.majorgeeks.com/files/details/ttsreader.html) to hear text. I wanted to automate what used to be a manual process. 
 
-I wanted to automate what used to be a manual process. With this, you can convert large groups of files into audio files.
+Use this to convert large groups of files to audio files: ``convert.sh`` > ``clean.py`` > ``split.py`` as needed > ``speak.py``
 
 To adjust the speech rate, edit line 16 of ``speech.py``
 
 SAPI5 voice Microsoft Mary recommended. 😎
+
+## Further reading
+
+[pyttsx3](https://pypi.org/project/pyttsx3/) - Text to Speech (TTS) library for Python 2 and 3
