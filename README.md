@@ -12,7 +12,7 @@ I used to depend on [TTSReader](https://www.majorgeeks.com/files/details/ttsread
 
 Use this to convert large groups of files to audio files: ``convert.sh`` > ``clean.py`` > ``split.py`` as needed > ``speak.py``
 
-To adjust the speech rate, edit line 16 of ``speech.py``
+To adjust the speech rate, edit line 16 of ``speak.py``
 
 SAPI5 voice Microsoft Mary recommended. 😎
 
