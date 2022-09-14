@@ -20,13 +20,14 @@ file_path_list = [
 
 re_exp_list = [
     re.compile(r'[0-9]'),  # removes numbers
+    (re.compile(r'\u03b2'), 'B'),  # replaces Greek B U+03B2 with B
     re.compile(r'[^\x00-\x7F]+'),  # removes any character not in ASCII character set 0-127 (0x0 to 0x7F)
     re.compile(r'\x0C'),  # removes Form Feed U+000C
     re.compile(r'\u2014'), # removes Em dash U+2014
     re.compile(r',{2,3}'),  # removes consecutive commas
     re.compile(r'([.,/#!$%^&*;:{}=_`~()-])[.,/#!$%^&*;:{}=_`~()-]+'),  # removes consecutive punctuation
     re.compile(r'(  +)'),  # removes extra spaces
-    (re.compile(r'[ \t]{2,}'), '   '),  # removes more than two tabs
+    (re.compile(r'[ \t]{2,}'), '   '),  # replaces 2 tabs with 1 tab
 ]
 
 for file_path in file_path_list:
